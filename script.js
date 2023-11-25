@@ -48,7 +48,7 @@ function validate() {
     }
 
     if (passwordEle === "0" || passwordEle.length <= 5) {
-        showError("Please enter a password with at least 5 characters")
+        showError("Please enter a password with at least 6 characters")
         return false
     }
     if (confirmEle !== passwordEle) {
