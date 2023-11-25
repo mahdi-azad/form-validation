@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>USER REGISTRATION</h1>
+        <form action="" name="myForm" onsubmit="return validate();">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter Your Name"/>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter Your Email"/>
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" placeholder="Enter Your Phone Number"/>
+
+            <label for="subject">Subject</label>
+            <select id="subject">
+                <option value="0" selected>Select</option>
+                <option value="1" >HTML</option>
+                <option value="2" >Javascript</option>
+                <option value="3" >CSS</option>
+                <option value="4" >JSP</option>
+            </select>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter Your Password"/>
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" placeholder="Confirm Your Password"/>
+
+            <label>
+                <input type="checkbox" id="terms" /> I agree to the <a href="#"> terms and conditions</a>
+            </label>
+
+            <p id="demo"></p>
+            <input type="submit" value="Submit"/>
+        </form>
+    </div>
+</body>
+<script src="script.js">
+</script>
+</html>
